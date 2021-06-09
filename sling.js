@@ -17,11 +17,21 @@ class Sling{
     }
 
     display(){
+        if(this.sling.bodyA){
       push ()
       strokeWeight(3)
       stroke("grey")
       line(this.sling.bodyA.position.x, this.sling.bodyA.position.y,
            this.sling.pointB.x,this.sling.pointB.y);
       pop ()
+        }
+    }
+
+    fly(){
+        this.sling.bodyA=null;
+    }
+
+    attach(body){
+        this.sling.bodyA=body;
     }
 }

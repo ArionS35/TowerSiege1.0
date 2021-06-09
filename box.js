@@ -4,8 +4,9 @@ class Box {
 
         var options={
 
-            friction:10000000,
+            friction:10,
             restitution:0.5
+
         }
         this.body=Bodies.rectangle(x,y,w,h,options)
         World.add(world,this.body)

@@ -153,3 +153,15 @@ polygonImg = loadImage("polygon.png")
 
  sling1.display()
  }
+
+ function mouseDragged(){
+     Matter.Body.setPosition(polygon,{x:mouseX,y:mouseY})
+ }
+
+ function mouseReleased(){
+    sling1.fly()
+}
+
+function keyPressed(){
+    sling1.attach(polygon)
+}
